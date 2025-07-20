@@ -10,9 +10,9 @@ django-ipware==7.0.1
 djangorestframework==3.16.0
 djangorestframework_simplejwt==5.5.0
 gunicorn==23.0.0
-mysqlclient==2.2.7
 packaging==25.0
 pillow==11.3.0
+psycopg2-binary==2.9.10
 pycparser==2.22
 PyJWT==2.9.0
 python-dotenv==1.1.1

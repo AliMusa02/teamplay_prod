@@ -109,12 +109,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'teamplay_dp',
-        'USER': 'root',
-        'PASSWORD': 'Xazarpen1403!',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'teamplay',
+        'USER': 'myuser',
+        'PASSWORD': 'xazarpen1403',
         'HOST': 'localhost',
-        'PORT': '3306',
+        'PORT': '5432',
     }
 }
 
