@@ -32,6 +32,7 @@ class TeamSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     # author_team_name = serializers.SerializerMethodField()
     team = TeamSerializer(read_only=True)
+    # profilePic = serializers.ImageField(required=False, allow_null=True)
 
     class Meta:
         model = User
@@ -42,3 +43,9 @@ class UserSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         user = User.objects.create_user(**validated_data)
         return user
+
+    # def create(self, validated_data):
+    #     if 'profilePic' not in validated_data:
+    #         validated_data['profilePic'] = "images/fallback.png"
+    #     user = User.objects.create_user(**validated_data)
+    #     return user
